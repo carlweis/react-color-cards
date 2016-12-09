@@ -1,0 +1,5 @@
+<div class="color-container">
+  <% 1...108.times do %>
+    <%= react_component('Card', {color: "#" + "%06x" % (rand * 0xffffff)}) %>
+  <% end %>
+</div>
